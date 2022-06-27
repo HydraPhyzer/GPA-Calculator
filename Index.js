@@ -101,5 +101,13 @@ document.querySelector(".B1").addEventListener("click" , (e)=>
 
     }
     let GPA=(Sum2/Sum1).toFixed(3);
-    alert(GPA)
+
+    document.querySelector('.Detail').style.display="flex";
+    document.querySelector('.Detail').classList.add('Detail2');
+    document.querySelector('.GPA').innerHTML=`${GPA}`;
+});
+
+document.querySelector('.B2').addEventListener("click" , ()=>
+{
+    document.querySelector('.Detail').classList.remove('Detail2');
 });
