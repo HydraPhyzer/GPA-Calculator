@@ -5,3 +5,75 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+body
+{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.Main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+}
+tr
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.fa-circle-plus
+{
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    margin: 10px 0px;
+    color: red;
+}
+.Heading
+{
+    color:yellow;
+    width: 100%;
+    text-align: center;
+    background-color: #30336b;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+table
+{
+    background-color: #686de0;
+    color: white;
+}
+input , select
+{
+    width: 100%;
+    outline: none;
+    border-radius: none;
+    background-color: white;
+    border: none;
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+
+    min-width: 10px;
+}
+tr
+{
+    margin: 0px 10px;
+}
+td
+{
+    margin: 3px;
+    text-align: center;
+}
+.BS
+{
+    background-color: #30336b;
+    color:yellow;
+    border: 0px;
+}
