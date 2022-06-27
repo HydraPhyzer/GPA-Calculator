@@ -9,6 +9,7 @@
     <title>GPA Calculator</title>
     <link rel="stylesheet" href="/Index.css">
     <link rel="shortcut icon" href="/Images/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"">
 </head>
 <body>
     <div class="Main">
@@ -18,19 +19,42 @@
         <div id="Body" class="Data">
             <form action="">
 
-                <table>
+                <table class="MainTable">
                     <thead>
                         <tr>
-                            <td class="Info">Subject Name</td>
-                            <td class="Info">Credit Hour</td>
+                            <td class="Info">Subject</td>
+                            <td class="Info">Credit Hr</td>
                             <td class="Info">Grades</td>
                         </tr>
                     </thead>
-                    <tbody class="Data">
-                        
-                        <tr>
-                            <td><input class="BS" type="submit" value="Submit Now"></td>
-                            <td><input class="BS" type="reset" value="Reset Now"></td>
+                    <tbody class="TableData">
+                        <tr class="DataBody">
+                            <div>
+                                <td><input CH="Sn" type="text"></td>   
+                                <td><input class="CH" type="number"></td>
+                                <td class="Grade">
+                                    <select name="" id="Grade">
+                                        <option value="">-</option>
+                                        <option value="">A+</option>
+                                        <option value="">A</option>
+                                        <option value="">A-</option>
+                                        <option value="">B+</option>
+                                        <option value="">B</option>
+                                        <option value="">B-</option>
+                                        <option value="">C+</option>
+                                        <option value="">C</option>
+                                        <option value="">C-</option>
+                                        <option value="">D+</option>
+                                        <option value="">D</option>
+                                        <option value="">D-</option>
+                                        <option value="">F</option>
+                                    </select>
+                                </td>   
+                            </div>
+                        </tr>
+                        <tr class="BTN">
+                            <td><input class="BS B1" type="submit" value="Calculate"></td>
+                            <td><input class="BS B2" type="reset" value="Reset Now"></td>
                         </tr>
                     </tbody>
                 </table>

@@ -21,10 +21,11 @@ body
     align-items: center;
     margin: 10px;
 }
-tr
+.MainTable tr
 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: 0px 10px;
 }
 .fa-circle-plus
 {
@@ -44,36 +45,31 @@ tr
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-table
+.MainTable
 {
     background-color: #686de0;
     color: white;
 }
-input , select
+input ,select , button
 {
     width: 100%;
     outline: none;
     border-radius: none;
-    background-color: white;
     border: none;
-    margin: 5px 0px;
+    margin: 5px 0px !important;
     padding: 5px;
     border-radius: 5px;
-
     min-width: 10px;
 }
-tr
-{
-    margin: 0px 10px;
-}
-td
+.MainTable td
 {
     margin: 3px;
     text-align: center;
 }
-.BS
+.BS , button
 {
     background-color: #30336b;
     color:yellow;
     border: 0px;
+    width: 100%;
 }
